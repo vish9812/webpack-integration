@@ -1,0 +1,8 @@
+@import 'custom';
+@import 'orange';
+@import 'blue';
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background: $mycolor;
+}

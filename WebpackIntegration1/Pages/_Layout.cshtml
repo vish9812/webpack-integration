@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <environment exclude="development">
+        <link href="~/dist/main.bundle.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+    <script>
+        var modernBrowser = 'fetch' in window;
+        if (!modernBrowser) {
+            var scriptElement = document.createElement('script');
+            scriptElement.async = false;
+            scriptElement.src = 'dist/polyfills.bundle.js';
+            document.head.appendChild(scriptElement);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Razor Page Layout @DateTime.Now.Year</p>
+        @RenderSection("footer", required: false)
+    </footer>
+    <environment include="Development">
+        <script src="~/dist/main.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/dist/main.bundle.js" asp-append-version="true"></script>
+    </environment>
+</body>
+</html>

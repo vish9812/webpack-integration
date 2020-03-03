@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "allowSyntheticDefaultImports": false,
+    "allowUnusedLabels": false,
+    "checkJs": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "dom",
+      "es2017",
+      "es2015"
+    ],
+    "listFiles": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "newLine": "CRLF",
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "include": [ "Client/scripts" ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
